@@ -3,3 +3,5 @@
 *.h5
 logs
 eval_result
+data/
+exps/
