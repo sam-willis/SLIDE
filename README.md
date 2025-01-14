@@ -108,7 +108,7 @@ For example, run the following command to generate features of the 400 groups of
 ```
 export CUDA_VISIBLE_DEVICES=0 && python latent_ddpm_keypoint_conditional_generation.py --config ../exps/mesh_overall_ckpts_and_generation_results/latent_feature_ddpm_models/add_centroid_as_first_keypoint/airplane/config_latent_ddpm_s3_dim_16_32_ae_kp_noise_0.04_keypoint_conditional_airplane_ae_trained_on_airplane.json \
 --ckpt ../exps/mesh_overall_ckpts_and_generation_results/latent_feature_ddpm_models/add_centroid_as_first_keypoint/airplane/pointnet_ckpt_884999.pkl \
---ema_idx 0 --batch_size 200 \
+--ema_idx 0 --batch_size 100 \
 --keypoint_file ../exps/generated_point_cloud_and_mesh/airplane/centroid/shapenet_psr_generated_data_16_pts.npz \
 --save_dir ../exps/generated_point_cloud_and_mesh/airplane/centroid
 ```
